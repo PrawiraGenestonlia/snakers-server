@@ -18,4 +18,9 @@ export class ServerStatusController extends Controller {
     return ServerStatus.getAllRoutes();
   }
 
+  @Get("/snake-game-server-memory")
+  public async getSnakeGameServerMemory(): Promise<any> {
+    return ServerStatus.getSnakeGameServerMemory();
+  }
+
 }
